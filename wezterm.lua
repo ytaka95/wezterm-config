@@ -12,8 +12,8 @@ config.color_scheme = 'Google Dark (Gogh)'
 config.window_background_opacity = 0.85
 
 config.font = wezterm.font_with_fallback {
-  {family = 'Monaco', weight = 'Bold'},
-  {family = 'Noto Sans JP', weight = 'Bold'},
+  {family = 'Monaco', weight = 'Regular'},
+  {family = 'Noto Sans JP', weight = 'Regular'},
 }
 config.font_size = 13.5
 

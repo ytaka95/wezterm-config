@@ -23,5 +23,7 @@ config.initial_cols = 220
 config.disable_default_key_bindings = true
 config.keys = keybindings.keys
 
+config.macos_forward_to_ime_modifier_mask = "CTRL"
+
 -- and finally, return the configuration to wezterm
 return config

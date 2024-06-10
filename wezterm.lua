@@ -13,7 +13,8 @@ config.window_background_opacity = 0.85
 
 config.font = wezterm.font_with_fallback {
   {family = 'Monaco', weight = 'Regular'},
-  {family = 'Noto Sans JP', weight = 'Regular'},
+  {family = 'Noto Sans JP', weight = 'Medium'},
+  {family = 'Hiragino Sans W5', weight = 'Regular'},
 }
 config.font_size = 13.5
 

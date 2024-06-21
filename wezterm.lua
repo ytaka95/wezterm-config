@@ -16,7 +16,7 @@ config.font = wezterm.font_with_fallback {
   {family = 'Noto Sans JP', weight = 'Medium'},
   {family = 'Hiragino Sans W5', weight = 'Regular'},
 }
-config.font_size = 13.5
+config.font_size = 14
 
 config.initial_rows = 60
 config.initial_cols = 220

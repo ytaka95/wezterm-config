@@ -25,6 +25,7 @@ config.disable_default_key_bindings = true
 config.keys = keybindings.keys
 
 config.macos_forward_to_ime_modifier_mask = "CTRL"
+config.macos_forward_to_ime_modifier_mask = "SHIFT"
 
 -- and finally, return the configuration to wezterm
 return config

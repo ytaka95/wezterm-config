@@ -1,5 +1,9 @@
 local wezterm = require 'wezterm'
 
+----------------------
+-- light mode style --
+----------------------
+
 return {
    style = {
       tab_bar = {

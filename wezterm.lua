@@ -36,6 +36,9 @@ local keybindings = require 'keybindings'
 config.disable_default_key_bindings = true
 config.keys = keybindings.keys
 
+-- Leaderキーを Control + q にする
+config.leader = { key = "q", mods = "CTRL", timeout_milliseconds = 2000 }
+
 -- ######## For macOS IME problem ########
 
 config.macos_forward_to_ime_modifier_mask = "CTRL|SHIFT"

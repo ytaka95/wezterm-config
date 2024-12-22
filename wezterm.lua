@@ -4,13 +4,16 @@ local config = wezterm.config_builder()
 -- ######## Global style ########
 
 -- config.color_scheme = 'Modus-Operandi-Tritanopia'
-config.color_scheme = 'modus-vivendi-deuteranopia'
-config.window_background_opacity = 0.7
+-- config.color_scheme = 'modus-vivendi-deuteranopia'
+-- config.color_scheme = 'X::DotShare (terminal.sexy)'
+config.color_scheme = 'Vibrant Ink (Gogh)'
+config.window_background_opacity = 0.7  -- 背景の透過
+config.macos_window_background_blur = 10  -- 背景のぼかし
+config.window_decorations = "RESIZE" -- タイトルバーを消す
 
 config.font = wezterm.font_with_fallback {
   {family = 'Monaco', weight = 'Regular'},
-  {family = 'Noto Sans JP', weight = 'Medium'},
-  {family = 'Hiragino Sans W5', weight = 'Regular'},
+  {family = 'Hiragino Sans W4', weight = 'Regular'},
 }
 
 config.font_size = 14
@@ -18,17 +21,24 @@ config.initial_rows = 60
 config.initial_cols = 220
 
 -- ######## Window frame style ########
--- config.window_frame = {
---    -- アクティブウィンドウの時のタイトルバー/タブバーの色
+config.window_frame = {
+--    -- アクティブウィンドウの時のタイトルバー (タブの後ろ部分) の色
 --    active_titlebar_bg = '#e0e0e0',
---    -- 非アクティブウィンドウの時のタイトルバー/タブバーの色
+--    -- 非アクティブウィンドウの時のタイトルバー (タブの後ろ部分) の色
 --    inactive_titlebar_bg = '#060011',
--- }
+   font = wezterm.font_with_fallback {
+      {family = 'Inter', weight = 'Bold'},
+      {family = 'Helvetica Neue', weight = 'Bold'},
+   },
+   font_size = 12,
+}
 
 -- ######## Tab bar style ########
+local tabbarstyle = require 'tabbarstyle_dark'
+config.colors = tabbarstyle.style
 
--- local tabbarstyle = require 'tabbarstyle'
--- config.colors = tabbarstyle.style
+config.show_new_tab_button_in_tab_bar = false
+config.show_tab_index_in_tab_bar = false
 
 -- ######## Key bindings ########
 

@@ -4,9 +4,13 @@ local config = wezterm.config_builder()
 -- ######## Global style ########
 
 -- config.color_scheme = 'Modus-Operandi-Tritanopia'
--- config.color_scheme = 'modus-vivendi-deuteranopia'
--- config.color_scheme = 'X::DotShare (terminal.sexy)'
-config.color_scheme = 'Vibrant Ink (Gogh)'
+-- config.color_scheme = 'modus-vivendi-deuteranopia' -- 文字が淡すぎ
+-- config.color_scheme = 'X::DotShare (terminal.sexy)' -- 色があせすぎ
+-- config.color_scheme = 'Vibrant Ink (Gogh)' -- gitの青いメッセージが読みづらい
+-- config.color_scheme = 'Vs Code Dark+ (Gogh)' -- 色が淡い
+-- config.color_scheme = 'ubuntu' -- 若干青が濃すぎ
+config.color_scheme = 'UltraDark' -- だいぶ色がパキッとする
+
 config.window_background_opacity = 0.7  -- 背景の透過
 config.macos_window_background_blur = 10  -- 背景のぼかし
 config.window_decorations = "RESIZE" -- タイトルバーを消す

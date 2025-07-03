@@ -37,24 +37,6 @@ config.window_frame = {
    font_size = 12,
 }
 
--- ######## Notification from Claude Code ########
-local is_claude = require 'functions/is_claude'
-
--- タスク完了時にOS通知を表示する
-wezterm.on('bell', function(window, pane)
-  if not is_claude.is_claude(pane) then
-    return
-  end
-
-  -- OS通知を表示
-  window:toast_notification('Claude Code', 'Task completed', nil, 4000)
-
-  -- macOSの場合は音を鳴らす
-  if wezterm.target_triple:find("darwin") then
-    wezterm.background_child_process({ "afplay", "/System/Library/Sounds/Purr.aiff" })
-  end
-end)
-
 -- ######## Tab bar style ########
 local tabbarstyle = require 'tabbarstyle_dark'
 config.colors = tabbarstyle.style
